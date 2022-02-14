@@ -10,7 +10,7 @@ const hero = () => {
 
   // 3. Create out useEffect function
   useEffect(() => {
-    fetch("https://heroes-five.vercel.app//api/heroes")
+    fetch("http://localhost:3000/api/heroes")
       .then((response) => response.json())
       // 4. Setting *dogImage* to the image url that we received from the response above
 
