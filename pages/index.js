@@ -105,7 +105,7 @@ export default function Home({ message }) {
 }
 
 export async function getServerSideProps() {
-  const res = await fetch(`https://heroes-five.vercel.app//api/heroes`);
+  const res = await fetch(`http://localhost:3000/api/heroes`);
 
   const data = await res.json();
   console.log(data);
